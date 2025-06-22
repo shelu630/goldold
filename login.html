@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GoldMind OTP Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Login via OTP</h2>
+    
+    <input type="tel" id="phoneNumber" placeholder="+91XXXXXXXXXX" />
+    <div id="recaptcha-container"></div>
+    <button onclick="sendOTP()">Send OTP</button>
+
+    <br><br>
+
+    <input type="text" id="otp" placeholder="Enter OTP" />
+    <button onclick="verifyOTP()">Verify OTP</button>
+
+    <p id="result"></p>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script type="module" src="firebase_config.js"></script>
+  <script type="module" src="login.js"></script>
+</body>
+</html>
